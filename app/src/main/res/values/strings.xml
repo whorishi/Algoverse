@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Algoverse</string>
+
+    <string name="stack_content_format_1">    <br><b>Stack</b> is a linear data structure which\n    follows a particular order in which the\n    operations are performed.\n</br><b>\n    The order may be LIFO(Last In First Out)\n    or FILO(First In Last Out)</b>\n
+    \n<br>    There are many real-life examples of\n    a stack. Consider an example of plates\n    stacked over one another in the canteen.\n    The plate which is at the top is the first\n    one to be removed, i.e. the plate which has\n    been placed at the bottommost position\n    remains in the stack for the longest period\n    of time.</br>
+    </string>
+
+    <string name="stack_content_format_2">   <b>LIFO Principle of Stack:\n</b>
+        <br>In programming terms, putting an\n    item on top of the stack is called <b>push</b>\n    and removing an item is called <b>pop</b>.</br>
+    </string>
+
+    <string name="stack_content_format_3">      <br>  In the above image, although item 3\n    was kept last, it was removed first. This\n    is exactly how the LIFO (Last In First\n    Out) Principle
+        works.</br>
+    </string>
+
+    <string name="stack_content_format_5"><br><b>The operations work as follows:</b></br>
+
+    \n\n1.	A pointer called TOP is used to keep track of the top element in the stack.
+    \n\n2.	When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.
+    \n\n3.	On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.
+    \n\n4.	On popping an element, we return the element pointed to by TOP and reduce its value.
+    \n\n5.	Before pushing, we check if the stack is already full.
+    \n\n6.	Before popping, we check if the stack is already empty.
+    </string>
+
+    <string name="stack_content_format_7"><b>To reverse a word:-</b> Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.\n
+        \n<b>In compilers:-</b> Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.\n
+        \n<b>In browsers:-</b> The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed.
+
+
+    </string>
+
+
+    <string name="img_decs"><b>TYPE IMAGE</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="who_rishi">who.rishi</string>
+    <string name="a_cs_e_learning_platform">A CS E-LEARNING PLATFORM</string>
+    <string name="main_app_logo">main_app_logo</string>
+    <string name="instagram_logo">instagram_logo</string>
+    <string name="register">REGISTER</string>
+    <string name="full_name">Full Name</string>
+    <string name="e_mail_address">E-mail address</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login_here">Login here</string>
+    <string name="register_here">Register here</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="toolbarcontent">toolbarContent</string>
+    <string name="algoversecopyright">© ALGOVERSE</string>
+    <string name="logout">LOGOUT</string>
+
+
+</resources>

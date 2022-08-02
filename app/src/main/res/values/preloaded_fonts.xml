@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abril_fatface</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/almendra_bold_italic</item>
+        <item>@font/andika</item>
+        <item>@font/arapey_italic</item>
+        <item>@font/armata</item>
+        <item>@font/atomic_age</item>
+        <item>@font/bad_script</item>
+        <item>@font/bellota_text_bold</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/bungee_inline</item>
+    </array>
+</resources>

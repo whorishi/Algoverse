@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.algoverse">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Algoverse">
+        <activity
+            android:name="com.example.algoverse.login"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.register"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.mainPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.StackPeakScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.StackIsEmptyScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.StackIsFullScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.StackPopScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.StackPushScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.StackCreationScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.StackTraversalScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.ArrayCreationScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.ArrayTraversalScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.ArrayUpdateScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.ArraySearchScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.ArrayDeletionScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.ArrayInsertionScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.GraphScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.TreeScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.LinkedList"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.QueueScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.StackScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.ArrayScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.HomePage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.algoverse.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

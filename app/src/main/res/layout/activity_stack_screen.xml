@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    android:background="@drawable/backgroundhomepagexml">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".StackScreen">
+
+
+        <ImageView
+            android:id="@+id/stackpagebg"
+            android:contentDescription="@string/img_decs"
+            android:layout_width="179dp"
+            android:layout_height="167dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/stackpagelogorbg" />
+
+        <TextView
+            android:id="@+id/stackbasicintrotextview"
+            android:contentDescription="@string/img_decs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Basic Intro"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/stackpagebg"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/stackpagebg"
+            app:layout_constraintTop_toBottomOf="@+id/stackpagebg" />
+
+        <TextView
+            android:id="@+id/stackcontent1"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/stack_content_format_1"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/stackbasicintrotextview"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/stackbasicintrotextview"
+            app:layout_constraintTop_toBottomOf="@+id/stackbasicintrotextview" />
+
+        <TextView
+            android:id="@+id/stackcontent2"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/stack_content_format_2"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/stackcontent1"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="@+id/stackcontent1"
+            app:layout_constraintTop_toBottomOf="@+id/stackcontent1" />
+
+        <TextView
+            android:id="@+id/endofstackpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2100dp"
+            android:text="END OF PAGE"
+            app:layout_constraintEnd_toEndOf="@+id/stackcontent2"
+            app:layout_constraintStart_toStartOf="@+id/stackcontent2"
+            app:layout_constraintTop_toBottomOf="@+id/stackcontent2" />
+
+        <ImageView
+            android:id="@+id/stackcontentimage"
+            android:layout_width="339dp"
+            android:layout_height="143dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/img_decs"
+            android:foregroundGravity="center"
+            app:layout_constraintStart_toStartOf="@+id/stackcontent2"
+            app:layout_constraintTop_toBottomOf="@+id/stackcontent2"
+            app:srcCompat="@drawable/stackimagerbg" />
+
+        <TextView
+            android:id="@+id/stackcontent3"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/stack_content_format_3"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/stackcontentimage"
+            app:layout_constraintStart_toStartOf="@+id/stackcontentimage"
+            app:layout_constraintTop_toBottomOf="@+id/stackcontentimage" />
+
+        <TextView
+            android:id="@+id/stackcontent4"
+            android:layout_width="339dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-black"
+            android:shadowColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="5"
+            android:shadowRadius="3"
+            android:text="Working of Stack Data Structure"
+            android:textColor="#EA6A0A"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/stackcontent3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/stackcontent3"
+            app:layout_constraintTop_toBottomOf="@+id/stackcontent3" />
+
+        <TextView
+            android:id="@+id/stackcontent5"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/stack_content_format_5"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/stackcontent4"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/stackcontent4"
+            app:layout_constraintTop_toBottomOf="@+id/stackcontent4" />
+
+        <TextView
+            android:id="@+id/stackcontent6"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-black"
+            android:shadowColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="5"
+            android:shadowRadius="3"
+            android:text="Application of Stack Data Structure:"
+            android:textColor="#EA6A0A"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/stackcontent5"
+            app:layout_constraintStart_toStartOf="@+id/stackcontent5"
+            app:layout_constraintTop_toBottomOf="@+id/stackcontent5" />
+
+        <TextView
+            android:id="@+id/stackcontent7"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/stack_content_format_7"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/stackcontent6"
+            app:layout_constraintStart_toStartOf="@+id/stackcontent6"
+            app:layout_constraintTop_toBottomOf="@+id/stackcontent6" />
+
+
+        <TextView
+            android:id="@+id/stackoperationtextview"
+            android:layout_width="339dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:shadowColor="#FFAB00"
+            android:shadowDx="10"
+            android:shadowDy="5"
+            android:shadowRadius="3"
+            android:text="OPERATIONS"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/stackcontent7"
+            app:layout_constraintStart_toStartOf="@+id/stackcontent7"
+            app:layout_constraintTop_toBottomOf="@+id/stackcontent7" />
+
+        <Button
+            android:id="@+id/stackcreationbutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/operations_button_bg"
+            android:text="CREATION"
+            android:textSize="20sp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/stackoperationtextview"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/stackoperationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/stackoperationtextview" />
+
+
+        <Button
+            android:id="@+id/stacktraversalbutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/operations_button_bg"
+            android:text="TRAVERSAL"
+            android:textSize="20sp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/stackoperationtextview"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@+id/stackoperationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/stackoperationtextview" />
+
+
+        <Button
+            android:id="@+id/stackpushbutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/operations_button_bg"
+            android:text="PUSH"
+            android:textSize="22sp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/stackoperationtextview"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/stackoperationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/stackoperationtextview" />
+
+
+        <Button
+            android:id="@+id/stackpopbutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/operations_button_bg"
+            android:text="POP"
+            android:textSize="22sp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/stackoperationtextview"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@+id/stackoperationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/stackoperationtextview" />
+
+
+        <Button
+            android:id="@+id/stackisemptybutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="204dp"
+            android:background="@drawable/operations_button_bg"
+            android:text="ISEMPTY"
+            android:textSize="22sp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/stackoperationtextview"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/stackoperationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/stackoperationtextview" />
+
+
+        <Button
+            android:id="@+id/stackisfullbutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="204dp"
+            android:background="@drawable/operations_button_bg"
+            android:text="ISFULL"
+            android:textSize="22sp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/stackoperationtextview"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@+id/stackoperationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/stackoperationtextview" />
+
+
+        <Button
+            android:id="@+id/stackpeakbutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="288dp"
+            android:background="@drawable/operations_button_bg"
+            android:elevation="10dp"
+            android:stateListAnimator="@null"
+            android:text="PEAK"
+            android:textSize="22sp"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/stackoperationtextview"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="@+id/stackoperationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/stackoperationtextview" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

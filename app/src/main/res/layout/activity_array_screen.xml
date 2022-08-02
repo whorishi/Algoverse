@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:background="@drawable/backgroundhomepagexml"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ArrayScreen">
+
+        <ImageView
+            android:id="@+id/arraypagebg"
+            android:layout_width="302dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arraypagelogo" />
+
+        <TextView
+            android:id="@+id/arraybasicintrotextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Basic Intro"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/arraypagebg"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/arraypagebg"
+            app:layout_constraintTop_toBottomOf="@+id/arraypagebg" />
+
+        <TextView
+            android:id="@+id/arrayContent1"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="fill_horizontal"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/arraybasicintrotextview"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="@+id/arraybasicintrotextview"
+            app:layout_constraintTop_toBottomOf="@+id/arraybasicintrotextview" />
+
+        <TextView
+            android:id="@+id/arraydeclarationtextview"
+            android:layout_width="339dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="4dp"
+            android:background="#2A2B29"
+            android:text="dataType arrayName[arraySize]      \n ex:-   int x[6];   char c[10];"
+            android:textColor="#FFD600"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/arrayContent1"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="@+id/arrayContent1"
+            app:layout_constraintTop_toBottomOf="@+id/arrayContent1" />
+
+        <ImageView
+            android:id="@+id/arraycontentimage"
+            android:layout_width="339dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="240dp"
+            app:layout_constraintEnd_toEndOf="@+id/arraybasicintrotextview"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/arraybasicintrotextview"
+            app:layout_constraintTop_toBottomOf="@+id/arraybasicintrotextview"
+            app:srcCompat="@drawable/arraycontentimage" />
+
+        <TextView
+            android:id="@+id/arrayContent2"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="370dp"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/arraybasicintrotextview"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@+id/arraybasicintrotextview"
+            app:layout_constraintTop_toBottomOf="@+id/arraybasicintrotextview" />
+
+        <TextView
+            android:id="@+id/endofarraypage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1500dp"
+            android:text="END OF PAGE"
+            app:layout_constraintEnd_toEndOf="@+id/arraybasicintrotextview"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="@+id/arraybasicintrotextview"
+            app:layout_constraintTop_toBottomOf="@+id/arraybasicintrotextview" />
+
+        <TextView
+            android:id="@+id/arrayContent3"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="C++ Array Initialization:\n       In C++, it's possible to initialize an array \n       during declaration."
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/arrayContent2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/arrayContent2"
+            app:layout_constraintTop_toBottomOf="@+id/arrayContent2" />
+
+        <TextView
+            android:id="@+id/arayinitializationtextview"
+            android:layout_width="339dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="4dp"
+            android:background="#2A2B29"
+            android:text="  int x[6] = {19, 10, 8, 17, 9, 15};"
+            android:textColor="#FFD600"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/arrayContent3"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/arrayContent3"
+            app:layout_constraintTop_toBottomOf="@+id/arrayContent3" />
+
+        <TextView
+            android:id="@+id/arrayContent4"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/arrayContent3"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="@+id/arrayContent3"
+            app:layout_constraintTop_toBottomOf="@+id/arrayContent3" />
+
+        <TextView
+            android:id="@+id/operationtextview"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:text="     OPERATIONS"
+            android:textColor="@color/black"
+            android:shadowColor="#FFAB00"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="@+id/arrayContent4"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/arrayContent4"
+            app:layout_constraintTop_toBottomOf="@+id/arrayContent4" />
+
+        <Button
+            android:id="@+id/arrayinsertionbutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/operations_button_bg"
+            android:text="INSERTION"
+            android:textSize="22sp"
+            android:elevation="5dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/operationtextview"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/operationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/operationtextview" />
+
+        <Button
+            android:id="@+id/arraydeletionbutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/operations_button_bg"
+            android:text="DELETION"
+            android:textSize="22sp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/operationtextview"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@+id/operationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/operationtextview" />
+
+        <Button
+            android:id="@+id/arraytraversingbutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="120dp"
+            android:text="TRAVERSAL"
+            android:background="@drawable/operations_button_bg"
+            android:textSize="22sp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="1398dp"
+            app:layout_constraintEnd_toEndOf="@+id/operationtextview"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/operationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/operationtextview"/>
+
+        <Button
+            android:id="@+id/arraysearchbutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/operations_button_bg"
+            android:text="SEARCHING"
+            android:textSize="22sp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/operationtextview"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@+id/operationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/operationtextview" />
+
+        <Button
+            android:id="@+id/arrayupdatebutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="204dp"
+            android:text="UPDATE"
+            android:background="@drawable/operations_button_bg"
+            android:textSize="22sp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="1398dp"
+            app:layout_constraintEnd_toEndOf="@+id/operationtextview"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/operationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/operationtextview"/>
+
+        <Button
+            android:id="@+id/arraycreatebutton"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="204dp"
+            android:background="@drawable/operations_button_bg"
+            android:text="CREATION"
+            android:textSize="22sp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/operationtextview"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@+id/operationtextview"
+            app:layout_constraintTop_toBottomOf="@+id/operationtextview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

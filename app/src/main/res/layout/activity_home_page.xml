@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:background="@drawable/gradient2"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/topics"
+            android:layout_width="320dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:gravity="center"
+            android:text="TOPICS"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/BASICDSA"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:lineSpacingExtra="4dp"
+
+            android:fontFamily="@font/bungee_inline"
+            android:gravity="center"
+            android:text="Basic Data Structures"
+            android:textColor="#8C0707"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/arraybutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/arraybg"
+            android:tag="3"
+            android:elevation="100dp"
+            android:translationZ="100dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/BASICDSA"
+            app:layout_constraintHorizontal_bias="0.011"
+            app:layout_constraintStart_toStartOf="@+id/BASICDSA"
+            app:layout_constraintTop_toBottomOf="@+id/BASICDSA"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/arraytextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="ARRAY"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/arraybutton"
+            app:layout_constraintHorizontal_bias="0.472"
+            app:layout_constraintStart_toStartOf="@+id/arraybutton"
+            app:layout_constraintTop_toBottomOf="@+id/arraybutton" />
+
+        <Button
+            android:id="@+id/stackbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/stackbg"
+            android:tag="1"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/BASICDSA"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/BASICDSA"
+            app:layout_constraintTop_toBottomOf="@+id/BASICDSA"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/stacktextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="STACK"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/stackbutton"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="@+id/stackbutton"
+            app:layout_constraintTop_toBottomOf="@+id/stackbutton" />
+
+        <Button
+            android:id="@+id/queuebutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/queuebg"
+            android:tag="2"
+            app:layout_constraintEnd_toEndOf="@+id/BASICDSA"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/BASICDSA"
+            app:layout_constraintTop_toBottomOf="@+id/BASICDSA"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/queuetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="QUEUE"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/queuebutton"
+            app:layout_constraintStart_toStartOf="@+id/queuebutton"
+            app:layout_constraintTop_toBottomOf="@+id/queuebutton" />
+
+        <Button
+            android:id="@+id/linkedlistbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="164dp"
+            android:background="@drawable/linklistbg"
+            android:tag="4"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/BASICDSA"
+            app:layout_constraintHorizontal_bias="0.011"
+            app:layout_constraintStart_toStartOf="@+id/BASICDSA"
+            app:layout_constraintTop_toBottomOf="@+id/BASICDSA"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/linkedlisttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text=" LINKED LIST"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="@+id/linkedlistbutton"
+            app:layout_constraintStart_toStartOf="@+id/linkedlistbutton"
+            app:layout_constraintTop_toBottomOf="@+id/linkedlistbutton" />
+
+        <Button
+            android:id="@+id/treebutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            android:layout_marginTop="164dp"
+            android:background="@drawable/treebg"
+            android:tag="5"
+            app:layout_constraintEnd_toEndOf="@+id/BASICDSA"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/BASICDSA"
+            app:layout_constraintTop_toBottomOf="@+id/BASICDSA"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/treetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TREE"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/treebutton"
+            app:layout_constraintStart_toStartOf="@+id/treebutton"
+            app:layout_constraintTop_toBottomOf="@+id/treebutton" />
+
+        <Button
+            android:id="@+id/graphsbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="164dp"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/graphbg"
+            android:tag="6"
+            app:layout_constraintEnd_toEndOf="@+id/BASICDSA"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/BASICDSA"
+            app:layout_constraintTop_toBottomOf="@+id/BASICDSA"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/graphstextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="GRAPHS"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/graphsbutton"
+            app:layout_constraintStart_toStartOf="@+id/graphsbutton"
+            app:layout_constraintTop_toBottomOf="@+id/graphsbutton" />
+
+        <TextView
+            android:id="@+id/sortingTechniques"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:fontFamily="@font/bungee_inline"
+            android:gravity="center"
+            android:text="Sorting Tecniques"
+            android:textColor="#8C0707"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BASICDSA" />
+
+        <Button
+            android:id="@+id/bubblesortbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sortinggeneralbg"
+            android:tag="7"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/sortingTechniques"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/sortingTechniques"
+            app:layout_constraintTop_toBottomOf="@+id/sortingTechniques"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/bubblesorttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="BUBBLE SORT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/bubblesortbutton"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="@+id/bubblesortbutton"
+            app:layout_constraintTop_toBottomOf="@+id/bubblesortbutton" />
+
+        <Button
+            android:id="@+id/mergesortbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sortinggeneralbg"
+            android:tag="8"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/sortingTechniques"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="@+id/sortingTechniques"
+            app:layout_constraintTop_toBottomOf="@+id/sortingTechniques"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/mergesorttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="MERGE SORT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/mergesortbutton"
+            app:layout_constraintStart_toStartOf="@+id/mergesortbutton"
+            app:layout_constraintTop_toBottomOf="@+id/mergesortbutton" />
+
+        <Button
+            android:id="@+id/insertionsortbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/insertionsortbg"
+            android:tag="9"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/sortingTechniques"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/sortingTechniques"
+            app:layout_constraintTop_toBottomOf="@+id/sortingTechniques"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/insertionsorttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="INSERTION SORT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/insertionsortbutton"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="@+id/insertionsortbutton"
+            app:layout_constraintTop_toBottomOf="@+id/insertionsortbutton" />
+
+        <Button
+            android:id="@+id/selectionsortbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/sortinggeneralbg"
+            android:tag="10"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/sortingTechniques"
+            app:layout_constraintHorizontal_bias="0.007"
+            app:layout_constraintStart_toStartOf="@+id/sortingTechniques"
+            app:layout_constraintTop_toBottomOf="@+id/sortingTechniques"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/selectionsorttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SELECTION SORT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/selectionsortbutton"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="@+id/selectionsortbutton"
+            app:layout_constraintTop_toBottomOf="@+id/selectionsortbutton" />
+
+        <Button
+            android:id="@+id/quicksortbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/quicksortbg"
+            android:tag="11"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/sortingTechniques"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/sortingTechniques"
+            app:layout_constraintTop_toBottomOf="@+id/sortingTechniques"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/quicksorttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="QUICK SORT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/quicksortbutton"
+
+            app:layout_constraintStart_toStartOf="@+id/quicksortbutton"
+            app:layout_constraintTop_toBottomOf="@+id/quicksortbutton" />
+
+        <Button
+            android:id="@+id/heapsortbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/heapsortbg"
+            android:tag="12"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/sortingTechniques"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/sortingTechniques"
+            app:layout_constraintTop_toBottomOf="@+id/sortingTechniques"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/heapsorttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="HEAP SORT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/heapsortbutton"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="@+id/heapsortbutton"
+            app:layout_constraintTop_toBottomOf="@+id/heapsortbutton" />
+
+        <Button
+            android:id="@+id/countsortbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/sortinggeneralbg"
+            android:tag="13"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/sortingTechniques"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/sortingTechniques"
+            app:layout_constraintTop_toBottomOf="@+id/sortingTechniques"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/countsorttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="COUNT SORT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/countsortbutton"
+
+            app:layout_constraintStart_toStartOf="@+id/countsortbutton"
+            app:layout_constraintTop_toBottomOf="@+id/countsortbutton" />
+
+        <Button
+            android:id="@+id/bucketsortbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/sortinggeneralbg"
+            android:tag="14"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/sortingTechniques"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/sortingTechniques"
+            app:layout_constraintTop_toBottomOf="@+id/sortingTechniques"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/bucketsorttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="BUCKET SORT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/bucketsortbutton"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="@+id/bucketsortbutton"
+            app:layout_constraintTop_toBottomOf="@+id/bucketsortbutton" />
+
+        <Button
+            android:id="@+id/radixsortbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/sortinggeneralbg"
+            android:tag="15"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="@+id/sortingTechniques"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/sortingTechniques"
+            app:layout_constraintTop_toBottomOf="@+id/sortingTechniques"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/radixsorttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="RADIX SORT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/radixsortbutton"
+
+            app:layout_constraintStart_toStartOf="@+id/radixsortbutton"
+            app:layout_constraintTop_toBottomOf="@+id/radixsortbutton" />
+
+        <TextView
+            android:id="@+id/endofhomepagetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="900dp"
+            android:text="END OF PAGE"
+            app:layout_constraintEnd_toEndOf="@+id/BASICDSA"
+            app:layout_constraintStart_toStartOf="@+id/BASICDSA"
+            app:layout_constraintTop_toBottomOf="@+id/BASICDSA" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+
+
+

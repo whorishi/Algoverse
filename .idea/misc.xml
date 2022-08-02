@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/DSA_button_color.xml" value="0.1" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/algo_button_color.xml" value="0.2425" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/button_shape.xml" value="0.2425" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/dbms_button_color.xml" value="0.2425" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/dc_button_color.xml" value="0.2425" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/dsa_button_color.xml" value="0.2425" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/homepagebutton.xml" value="0.152" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/input_background.xml" value="0.2385" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/item_selector.xml" value="0.2385" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/login_button_background.xml" value="0.2385" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/operations_button_bg.xml" value="0.2255" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/os_button_color.xml" value="0.2425" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/pda_button_color.xml" value="0.2425" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/rounded_corner.xml" value="0.2385" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/drawable/stackbutton.xml" value="0.2425" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_Register.xml" value="0.23229166666666667" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_creation_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_deletion_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_insertion_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_screen.xml" value="0.4" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_search_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_traversal_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_update_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_graph_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_home_page.xml" value="0.264" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_linked_list.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_login_signup.xml" value="0.23229166666666667" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_main.xml" value="0.152" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_main_page.xml" value="0.23229166666666667" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_queue_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_creation_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_is_empty_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_is_full_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_peak_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_pop_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_push_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_screen.xml" value="0.176" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_traversal_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_tree_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/fragment_explore.xml" value="0.264" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/fragment_home.xml" value="0.12" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/fragment_profile.xml" value="0.23229166666666667" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/fragment_test.xml" value="0.23229166666666667" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/menu/bottom_menu.xml" value="0.23229166666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
