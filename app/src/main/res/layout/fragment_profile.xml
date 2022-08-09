@@ -10,7 +10,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="0dp"
         android:elevation="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:background="#222123"
             android:elevation="3dp"
-            android:minHeight="?attr/actionBarSize">
+            android:minHeight="?android:attr/actionBarSize">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -63,7 +63,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="60.1dp"
         android:background="#222123"
         android:fillViewport="true"
         tools:layout_editor_absoluteX="1dp"

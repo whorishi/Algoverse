@@ -53,6 +53,13 @@
     <string name="toolbarcontent">toolbarContent</string>
     <string name="algoversecopyright">© ALGOVERSE</string>
     <string name="logout">LOGOUT</string>
+    <string name="toolbarimage">toolbarimage</string>
+    <string name="explore">EXPLORE</string>
+    <string name="data_structures">Data Structures</string>
+    <string name="image">image</string>
+    <string name="sorting_techniques">Sorting Techniques</string>
+    <string name="algorithms">Algorithms</string>
+    <string name="test">TEST</string>
 
 
 </resources>
