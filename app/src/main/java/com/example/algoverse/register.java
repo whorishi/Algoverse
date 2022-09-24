@@ -14,15 +14,23 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class register extends AppCompatActivity {
     int x;
     private FirebaseAuth mAuth;
+    FirebaseFirestore fstore;
     final String TAG="register";
+    String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +38,9 @@ public class register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         mAuth = FirebaseAuth.getInstance();
+        fstore = FirebaseFirestore.getInstance();
         Button registerbutton=findViewById(R.id.registerbutton);
-        EditText nameInput= findViewById(R.id.editTextTextPersonName);
+        final EditText nameInput= findViewById(R.id.editTextTextPersonName);
         final EditText emailInput= findViewById(R.id.editTextTextEmailAddress);
         final EditText passwordInput= findViewById(R.id.editTextTextPassword);
         final EditText confirmpasswordInput = findViewById(R.id.editTextTextPassword2);
@@ -43,7 +52,7 @@ public class register extends AppCompatActivity {
                 String fullName= nameInput.getText().toString().trim();
                 String Email=emailInput.getText().toString().trim();
                 String Password=passwordInput.getText().toString().trim();
-                String confirmPassword = confirmpasswordInput.getText().toString().trim();
+                //String confirmPassword = confirmpasswordInput.getText().toString().trim();
 
                 if(TextUtils.isEmpty(fullName))
                 {
@@ -73,7 +82,7 @@ public class register extends AppCompatActivity {
                     passwordInput.setError("Password must contain at least one Lowercase, Uppercase and digit");
                     return;
                 }
-                Register(Email,Password);
+                Register(Email,Password,fullName,Email,Password);
             }
         });
 
@@ -85,8 +94,12 @@ public class register extends AppCompatActivity {
         });
     }
 
-    private void Register(String email,String password)
+    private void Register(String email,String password,String fullName,String Email, String Password)
     {
+//        String fullName= nameInput.getText().toString().trim();
+//        String Email=emailInput.getText().toString().trim();
+//        String Password=passwordInput.getText().toString().trim();
+
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -95,6 +108,18 @@ public class register extends AppCompatActivity {
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(register.this, "Authentication Success", Toast.LENGTH_SHORT).show();
+                            userID = mAuth.getCurrentUser().getUid();
+                            DocumentReference documentReference = fstore.collection("users").document(userID);
+                            Map<String,Object> User=new HashMap<>();
+                            User.put("name",fullName);
+                            User.put("email",Email);
+                            User.put("password",Password);
+                            documentReference.set(User).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+                                    Toast.makeText(register.this, "Data Stored", Toast.LENGTH_SHORT).show();
+                                }
+                            });
                             startActivity(new Intent(getApplicationContext(),mainPage.class));
                             finish();
                         } else {

@@ -1,11 +1,6 @@
 package com.example.algoverse;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
-import android.content.EntityIterator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -16,9 +11,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -36,7 +33,7 @@ public class login extends AppCompatActivity {
         Button loginbutton =findViewById(R.id.loginbutton);
         final EditText emailInput = findViewById(R.id.logineditTextTextEmailAddress);
         final EditText passwordInput = findViewById(R.id.logineditTextTextPassword);
-        TextView registerLink = findViewById(R.id.registerHere);
+        TextView registerclick = findViewById(R.id.registerlink);
         TextView forgotPasswordLink = findViewById(R.id.forgotPassword);
 
         loginbutton.setOnClickListener(new View.OnClickListener() {
@@ -50,13 +47,11 @@ public class login extends AppCompatActivity {
                     emailInput.setError("Email is required");
                     return;
                 }
-
                 if(TextUtils.isEmpty(Password))
                 {
                     passwordInput.setError("Password is required");
                     return;
                 }
-
                 if(Password.length() < 6)
                 {
                     passwordInput.setError("Password must be >= 6 characters");
@@ -67,10 +62,10 @@ public class login extends AppCompatActivity {
             }
         });
 
-        registerLink.setOnClickListener(new View.OnClickListener() {
+        registerclick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(login.this, register.class));
+                startActivity(new Intent(login.this, register.class ));
                 finish();
             }
         });

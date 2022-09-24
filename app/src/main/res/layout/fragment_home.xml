@@ -94,6 +94,7 @@
                 android:text="@string/algoversecopyright"
                 android:textColor="#FF6D00"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.438"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

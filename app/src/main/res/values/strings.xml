@@ -51,7 +51,9 @@
     <string name="login">Login</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="toolbarcontent">toolbarContent</string>
-    <string name="algoversecopyright">© ALGOVERSE</string>
+    <string name="algoversecopyright">
+        <p> &#xA9; ALGOVERSE </p>
+    </string>
     <string name="logout">LOGOUT</string>
     <string name="toolbarimage">toolbarimage</string>
     <string name="explore">EXPLORE</string>
@@ -60,6 +62,9 @@
     <string name="sorting_techniques">Sorting Techniques</string>
     <string name="algorithms">Algorithms</string>
     <string name="test">TEST</string>
+    <string name="array_content">dataType arrayName[arraySize] \n ex:- <code> int x[6]; char c[10]; </code></string>
+    <string name="operations">OPERATIONS</string>
+    <string name="array_content2"><p><code> int x[6] = {19, 10, 8, 17, 9, 15};</code></p></string>
 
 
 </resources>

@@ -49,11 +49,11 @@
 
                 <ImageView
                     android:layout_width="30dp"
-                    android:contentDescription="@string/toolbarimage"
                     android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="14dp"
                     android:layout_marginEnd="15dp"
+                    android:contentDescription="@string/toolbarimage"
                     android:src="@drawable/searchsymbolpng" />
 
 
@@ -76,7 +76,9 @@
 
             <HorizontalScrollView
                 android:id="@+id/horizontalScrollView"
-                android:layout_width="350dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
                 android:layout_height="110dp"
                 android:layout_marginTop="434dp"
                 android:fillViewport="true"
@@ -208,7 +210,9 @@
 
             <HorizontalScrollView
                 android:id="@+id/horizontalScrollView2"
-                android:layout_width="350dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
                 android:layout_height="110dp"
                 android:layout_marginTop="16dp"
                 android:fillViewport="true"
@@ -369,7 +373,9 @@
 
             <HorizontalScrollView
                 android:id="@+id/horizontalScrollView3"
-                android:layout_width="330dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
                 android:layout_height="110dp"
                 android:layout_marginTop="20dp"
                 android:fillViewport="true"
@@ -382,7 +388,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:background="#222111">
+                    android:background="#222123">
 
                     <Button
                         android:id="@+id/arraybutton"

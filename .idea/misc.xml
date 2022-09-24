@@ -22,7 +22,7 @@
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_creation_screen.xml" value="0.23645833333333333" />
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_deletion_screen.xml" value="0.23645833333333333" />
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_insertion_screen.xml" value="0.23645833333333333" />
-        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_screen.xml" value="0.4" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_screen.xml" value="0.25254813137032844" />
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_search_screen.xml" value="0.23645833333333333" />
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_traversal_screen.xml" value="0.23645833333333333" />
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_array_update_screen.xml" value="0.23645833333333333" />
@@ -41,12 +41,12 @@
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_peak_screen.xml" value="0.23645833333333333" />
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_pop_screen.xml" value="0.23645833333333333" />
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_push_screen.xml" value="0.23645833333333333" />
-        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_screen.xml" value="0.176" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_screen.xml" value="0.22389558232931728" />
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_stack_traversal_screen.xml" value="0.23645833333333333" />
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/activity_tree_screen.xml" value="0.23645833333333333" />
-        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/fragment_explore.xml" value="0.1" />
-        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/fragment_home.xml" value="0.1" />
-        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/fragment_profile.xml" value="0.152" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/fragment_explore.xml" value="0.136" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/layout/fragment_test.xml" value="0.176" />
         <entry key="..\:/ANDROID STUDIO PROJECTS/Quizzer/app/src/main/res/menu/bottom_menu.xml" value="0.23229166666666667" />
       </map>
