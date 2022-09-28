@@ -77,7 +77,7 @@
                 android:id="@+id/logoutbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="252dp"
+                android:layout_marginTop="552dp"
                 android:background="@drawable/login_button_background"
                 android:text="@string/logout"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -89,12 +89,62 @@
                 android:id="@+id/ENDOFPAGE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="800dp"
+                android:layout_marginTop="630dp"
                 android:text="@string/algoversecopyright"
                 android:textColor="#FF6D00"
+                android:layout_marginRight="25dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="272dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/profile_bg"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/profileImageId"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pose"
+                    android:layout_gravity="center_horizontal"
+                    tools:src="@tools:sample/avatars"/>
+
+                <TextView
+                    android:id="@+id/profileNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/abril_fatface"
+                    android:gravity="center"
+                    android:text="NAME"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profileEmailTextVew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/berkshire_swash"
+                    android:gravity="center"
+                    android:text=" email "
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
