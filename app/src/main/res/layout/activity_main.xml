@@ -32,34 +32,4 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView2" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.976"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="UseCompoundDrawables">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="100sp"
-            app:srcCompat="@drawable/instalogo"
-            android:contentDescription="@string/instagram_logo" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:fontFamily="@font/amaranth_bold"
-            android:text="@string/who_rishi"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
-
-    </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
