@@ -65,6 +65,7 @@
     <string name="array_content">dataType arrayName[arraySize] \n ex:- <code> int x[6]; char c[10]; </code></string>
     <string name="operations">OPERATIONS</string>
     <string name="array_content2"><p><code> int x[6] = {19, 10, 8, 17, 9, 15};</code></p></string>
+    <string name="easy">easy</string>
 
 
 </resources>

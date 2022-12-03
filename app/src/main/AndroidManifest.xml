@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.algoverse">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,76 +12,90 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Algoverse">
         <activity
-            android:name="com.example.algoverse.login"
+            android:name=".resultpage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".quizpage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".login"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.register"
+            android:name=".register"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.mainPage"
+            android:name=".mainPage"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.StackPeakScreen"
+            android:name=".StackPeakScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.StackIsEmptyScreen"
+            android:name=".StackIsEmptyScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.StackIsFullScreen"
+            android:name=".StackIsFullScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.StackPopScreen"
+            android:name=".StackPopScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.StackPushScreen"
+            android:name=".StackPushScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.StackCreationScreen"
+            android:name=".StackCreationScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.StackTraversalScreen"
+            android:name=".StackTraversalScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.ArrayCreationScreen"
+            android:name=".ArrayCreationScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.ArrayTraversalScreen"
+            android:name=".ArrayTraversalScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.ArrayUpdateScreen"
+            android:name=".ArrayUpdateScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.ArraySearchScreen"
+            android:name=".ArraySearchScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.ArrayDeletionScreen"
+            android:name=".ArrayDeletionScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.ArrayInsertionScreen"
+            android:name=".ArrayInsertionScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.GraphScreen"
+            android:name=".GraphScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.TreeScreen"
+            android:name=".TreeScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.LinkedList"
+            android:name=".LinkedList"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.QueueScreen"
+            android:name=".QueueScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.StackScreen"
+            android:name=".StackScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.ArrayScreen"
+            android:name=".ArrayScreen"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.HomePage"
+            android:name=".HomePage"
             android:exported="false" />
         <activity
-            android:name="com.example.algoverse.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
