@@ -5,6 +5,10 @@ public class modelclass {
     String Question;
     String OA,OB,OC,OD,ans;
 
+    public modelclass(){
+
+    }
+
     public modelclass(String question, String OA, String OB, String OC, String OD, String ans) {
         Question = question;
         this.OA = OA;

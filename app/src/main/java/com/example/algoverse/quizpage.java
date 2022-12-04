@@ -14,10 +14,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class quizpage extends AppCompatActivity {
-
-
-
-
+    TextView exit;
     public ArrayList<modelclass> list;
     List<modelclass> allQuestions;
     modelclass Modelclass;
@@ -34,14 +31,23 @@ public class quizpage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizpage);
+        exit=findViewById(R.id.exit);
         quizId = getIntent().getStringExtra("quizId");
         id=findViewById(R.id.quizId);
         id.setText("qid: "+quizId);
         Hooks();
         list=new ArrayList<>();
-        list.add(new modelclass("what is c++?","language","scripting language","programming language","desining software","programming language"));
-        list.add(new modelclass("what is java?","language","scripting language","programming language","desining software","language"));
-        list.add(new modelclass("what is python?","language","scripting language","programming language","desining software","scripting language"));
+        list.add(new modelclass("How do you insert COMMENTS in C++ code?","/* This is a comment","// This is a comment","# This is a comment","\\ This is a comment","// This is a comment"));
+        list.add(new modelclass("Which data type is used to create a variable that should store text?","string","int","float","letter","string"));
+        list.add(new modelclass("How do you create a variable with the numeric value 5?","double x = 5 ;","int x = 5 ;","x = 5 ;","num x = 5 ;","int x = 5 ;"));
+        list.add(new modelclass("How do you create a variable with the floating number 2.8?","byte x = 2.8 ;","double x = 2.8 ;","x = 2.8 ;","int x = float(2.800) ;","double x = 2.8 ;"));
+        list.add(new modelclass("Which method can be used to find the length of a string?","getSize();","length();","getLength();","len()","length();"));
+        list.add(new modelclass("Which operator is used to add together two values?","*","+","%","++","+"));
+        list.add(new modelclass("Which header file lets us work with input and output objects?","#incude <stream>","#include <i/ostream>","#include <iostream>","#include <inoutstream>","#include <iostream>"));
+        list.add(new modelclass("To declare an array in C++, define the variable type with:","{}","[]","size()","()","[]"));
+        list.add(new modelclass("Which keyword is used to create a class in C++?","class()","class","Myclass","CLASS","class"));
+        list.add(new modelclass("How do you create a function in C++?","funcName=>{...}","funcName[]{...}","funcName(){...}","(funcName){...}","funcName(){...}"));
+
         total=list.size();
         allQuestions=list;
         total=allQuestions.size();
@@ -49,6 +55,13 @@ public class quizpage extends AppCompatActivity {
         Modelclass = list.get(index);
         nextBtn.setClickable(false);
         setAllData();
+
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(quizpage.this,TestFragment.class));
+            }
+        });
     }
 
     private void setAllData() {
@@ -117,6 +130,7 @@ public class quizpage extends AppCompatActivity {
         intent.putExtra("total",total);
         intent.putExtra("quizid",quizId);
         startActivity(intent);
+        finish();
     }
 
     public void enableButton(){

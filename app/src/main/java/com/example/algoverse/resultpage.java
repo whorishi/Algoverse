@@ -17,7 +17,7 @@ public class resultpage extends AppCompatActivity {
     TextView score;
     int Correct,Wrong,Total;
     TextView share;
-
+    TextView exit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +26,7 @@ public class resultpage extends AppCompatActivity {
         Wrong=getIntent().getIntExtra("wrong",0);
         Total=getIntent().getIntExtra("total",0);
         quizId=getIntent().getStringExtra("quizid");
-
+        exit=findViewById(R.id.exit);
         share=findViewById(R.id.shareBtn);
         id=findViewById(R.id.quizId);
         circularProgressBar=findViewById(R.id.circularProgressBar);
@@ -54,6 +54,12 @@ public class resultpage extends AppCompatActivity {
             }
         });
 
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(resultpage.this,TestFragment.class));
+            }
+        });
 
     }
 }
